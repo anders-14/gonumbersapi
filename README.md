@@ -1,6 +1,8 @@
 # gonumbersapi
 
-A go module that wraps around the [numbersapi](http://numbersapi.com) api.
+A go module that wraps around [numbersapi](http://numbersapi.com)
+
+## Usage
 
 ```go
 package main
