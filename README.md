@@ -20,8 +20,7 @@ func main() {
   // Fun fact
   fmt.Println(gna.FunFact(14))
 
-  // What happened on a given date
-  // No freedom formatting of dates
+  // What happened on a given date (dd/mm - This ain't murica)
   fmt.Println(gna.DateFact("31/12"))
 
   // What happened in a given year
