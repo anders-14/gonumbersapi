@@ -4,21 +4,21 @@ import (
 	"fmt"
 	"testing"
 
-  gna "github.com/anders-14/gonumbersapi"
+	gnu "github.com/anders-14/gonumbersapi"
 )
 
 func TestMathFact(t *testing.T) {
-	fmt.Println(gna.MathFact(39000))
+	fmt.Println(gnu.MathFact(39000))
 }
 
 func TestFunFact(t *testing.T) {
-	fmt.Println(gna.FunFact(1))
+	fmt.Println(gnu.FunFact(1))
 }
 
 func TestDateFact(t *testing.T) {
-	fmt.Println(gna.DateFact("12/04"))
+	fmt.Println(gnu.DateFact("12/04"))
 }
 
 func TestYearFact(t *testing.T) {
-	fmt.Println(gna.YearFact(2002))
+	fmt.Println(gnu.YearFact(2002))
 }

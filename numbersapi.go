@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-const BASE_URL = "http://numbersapi.com/"
+const baseURL = "http://numbersapi.com/"
 
 var reDate = regexp.MustCompile(`\d\d\/\d\d`)
 
@@ -35,7 +35,7 @@ func fetch(url string) string {
 
 // MathFact return a mathematical fact about the number passed to it
 func MathFact(number int) string {
-	url := fmt.Sprintf("%s%d/math", BASE_URL, number)
+	url := fmt.Sprintf("%s%d/math", baseURL, number)
 
 	fact := fetch(url)
 
@@ -44,7 +44,7 @@ func MathFact(number int) string {
 
 // FunFact returns some random trivia about the number passed to it
 func FunFact(number int) string {
-	url := fmt.Sprintf("%s%d/trivia", BASE_URL, number)
+	url := fmt.Sprintf("%s%d/trivia", baseURL, number)
 
 	fact := fetch(url)
 
@@ -61,7 +61,7 @@ func DateFact(date string) string {
 	dateNums := strings.Split(date, "/")
 	newDate := fmt.Sprintf("%s/%s", dateNums[1], dateNums[0])
 
-	url := fmt.Sprintf("%s%s/%s", BASE_URL, newDate, "date")
+	url := fmt.Sprintf("%s%s/%s", baseURL, newDate, "date")
 
 	fact := fetch(url)
 
@@ -70,7 +70,7 @@ func DateFact(date string) string {
 
 // YearFact returns a fact about the year passed to it
 func YearFact(year int) string {
-	url := fmt.Sprintf("%s%d/year", BASE_URL, year)
+	url := fmt.Sprintf("%s%d/year", baseURL, year)
 
 	fact := fetch(url)
 
